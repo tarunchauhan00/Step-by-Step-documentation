@@ -1,0 +1,677 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../supabase-schema/">
+      
+      
+        <link rel="next" href="../styling-assets/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>User Guide - Step by Step App Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-how-to-use-user-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Step by Step App Documentation" class="md-header__button md-logo" aria-label="Step by Step App Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Step by Step App Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              User Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CraftyCrow-Co/step-by-step-app" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHubUsername/step-by-step-app
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Step by Step App Documentation" class="md-nav__button md-logo" aria-label="Step by Step App Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Step by Step App Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CraftyCrow-Co/step-by-step-app" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHubUsername/step-by-step-app
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Features
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authentication-roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Authentication & User Roles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How Each Page Works
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supabase-schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supabase Schema & Client
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../styling-assets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Styling & Static Assets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="6-how-to-use-user-guide">6. How to Use (User Guide)<a class="headerlink" href="#6-how-to-use-user-guide" title="Permanent link">&para;</a></h1>
+<p>Below is a step-by-step guide, separated by user role.</p>
+<hr />
+<h1 id="owneradmin-workflow">Owner/Admin Workflow<a class="headerlink" href="#owneradmin-workflow" title="Permanent link">&para;</a></h1>
+<ol>
+<li>
+<p><strong>Sign Up / Log In</strong>  </p>
+<ul>
+<li>First time: click <strong>Sign Up</strong>, complete registration, then log in.  </li>
+<li>Visit <code>https://ffms.netlify.app/</code>.  </li>
+<li>Returning users: log in directly.</li>
+</ul>
+</li>
+<li>
+<p><strong>View Processes</strong>  </p>
+<ul>
+<li>After login, you land on <code>/processes</code>.  </li>
+<li>If you have no processes yet, you’ll see an empty state with an <strong>Add Process</strong> button.</li>
+</ul>
+</li>
+<li>
+<p><strong>Create a Process</strong>  </p>
+<ul>
+<li>Click <strong>Add Process</strong> → you see fields for:  </li>
+<li><strong>Process Name</strong> (text)  </li>
+<li><strong>Editor Emails</strong> (comma-separated, for any co-owners or editors)  </li>
+<li><strong>Form Type</strong> (Buttons: Google Form or Crafty Form)  </li>
+<li>If you choose <strong>Google Form</strong>: clicking <strong>Save</strong> will trigger a backend call to create a new Google Form via your Netlify function (using your stored <code>googleToken</code>). Once created, the app saves <code>google_form_id</code> and <code>google_form_url</code> in the database, then opens the Google Form editor in a new tab.  </li>
+<li>If you choose <strong>Crafty Form</strong>: clicking <strong>Save</strong> opens the Crafty Form builder in a new tab. After you finish building, paste the shared form link back into the <strong>Crafty Form URL</strong> field. Then click <strong>Save</strong> again to store the <code>form_url</code> in Supabase.  </li>
+<li>After the form is associated (Google or Crafty), you’re redirected to <code>/process/&lt;newProcessId&gt;/steps</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Open a Process</strong>  </p>
+<ul>
+<li>Click any Process card → you go to <code>/process/&lt;processId&gt;/steps</code> (the StepCreation page).  </li>
+<li>If no steps exist yet, you’ll see “No steps yet” plus an <strong>Add Step</strong> button.</li>
+</ul>
+</li>
+<li>
+<p><strong>Add a Single Step</strong>  </p>
+<ul>
+<li>On <code>/process/&lt;processId&gt;/steps</code>, click <strong>Add Step</strong> → you arrive at the AddStep form.  </li>
+<li>Fill in:  </li>
+<li><strong>Step Name</strong> &amp; <strong>Description</strong> (text fields)  </li>
+<li><strong>Due Date</strong> (e.g., June 15, 2025)  </li>
+<li><strong>Assign to Doer</strong> (dropdown; only users with role = doer appear)  </li>
+<li>(Optional) <strong>Google Form URL</strong>  </li>
+<li>(Optional) <strong>Custom Form</strong> (if you have already built one under <strong>Forms</strong>)  </li>
+<li>Click <strong>Save</strong>. The new Step appears in the list.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bulk Edit / Reorder Steps</strong>  </p>
+<ul>
+<li>If you have more than one Step, click <strong>Bulk Edit</strong> (in the top bar of StepCreation). That opens the BulkAddFlowchart page.  </li>
+<li>On BulkAddFlowchart, you see all existing Steps in a list with their Step ID, Sequence ID, TAT, name, and responsibility.  </li>
+<li>To add a <strong>parallel</strong> Step next to any existing one, click the small <strong>+</strong> icon on the right side of that Step’s card. (Parallel means same sequenceId, stepId + 1.)  </li>
+<li>To add a <strong>sequential</strong> Step directly below any existing one, click the <strong>+</strong> button just beneath that Step. (Sequential means both stepId and sequenceId increment by 1.)  </li>
+<li>To edit an existing Step, click the three‐dot menu (⋮) on that Step and choose <strong>Edit</strong>—this takes you to the AddStep form prefilled with that Step’s data.  </li>
+<li>To delete an existing Step, click the three‐dot menu and choose <strong>Delete</strong>. You’ll be prompted to confirm.  </li>
+<li>After adding as many new Steps as needed, click <strong>Save All</strong> at the top. This will batch‐insert only the newly added Steps (it automatically re‐sequences them before insertion).  </li>
+<li>Or click <strong>Cancel</strong> to return without saving.  </li>
+<li>After <strong>Save All</strong>, you return to <code>/process/&lt;processId&gt;/steps</code>, and the new Steps appear in the Step list.</li>
+</ul>
+</li>
+<li>
+<p><strong>Send Reminders</strong>  </p>
+<ul>
+<li>Visit <strong>Reminders</strong> (<code>/reminders</code>).  </li>
+<li>You’ll see lists of Steps that are “Due Soon” or “Overdue.”  </li>
+<li>Click <strong>Send Reminder</strong> next to any Step → triggers an email or in-app reminder (depending on your Supabase SMTP setup).  </li>
+<li>You can also choose “Send to All Overdue” or “Send to All Due Today” to batch‐send.</li>
+</ul>
+</li>
+<li>
+<p><strong>View Reports</strong>  </p>
+<ul>
+<li>Visit <strong>Reports</strong> (<code>/report</code>). The ReportPage offers two main views:  </li>
+<li><strong>By Process (Timeline Mode)</strong>  <ul>
+<li>Shows each Process as a vertical timeline entry containing:  </li>
+<li><strong>Date Cell:</strong> the earliest start time among that Process’s Steps (with a clock icon).  </li>
+<li><strong>Progress Card:</strong>  <ul>
+<li>Process name and a collapse/expand chevron.  </li>
+<li>Three colored tags showing:  </li>
+<li>Total Steps (e.g., “5 Steps”)  </li>
+<li>Total Data Points (number of form submissions)  </li>
+<li>Total TAT (sum of all Steps’ TAT, in hours)  </li>
+<li>A horizontal progress bar indicating the percentage of Steps completed (e.g., “3 / 5 steps (60%)”).  </li>
+<li>When expanded, an indented list of all Steps in that Process, each showing:  </li>
+<li><strong>Status Pill</strong> (Pending, In Progress, or Completed—with distinct background/foreground colors).  </li>
+<li><strong>Start Time</strong> (formatted “YYYY-MM-DD HH:mm:ss” in IST) or “—” if not started.  </li>
+<li><strong>Duration</strong> (“Xh Ym”) from <code>started_at</code> to <code>completed_at</code> or to now, and if overdue, “• Overdue Xh Ym.”  </li>
+</ul>
+</li>
+<li>Clicking the chevron toggles showing/hiding that Process’s step list.  </li>
+</ul>
+</li>
+<li><strong>By Step (List Mode)</strong>  <ul>
+<li>Flattens every Step across all Processes into one scrollable list. Each Step item shows:  </li>
+<li><strong>“ProcessName: StepName”</strong> (bold), followed by a status pill.  </li>
+<li>An arrow button → clicking it switches back to the timeline view and scrolls that Process card into center.  </li>
+<li><strong>Status Sequence</strong> (if defined), e.g. “Approved → Completed,” or “No statuses.”  </li>
+<li><strong>Start Time</strong> (or “—”) and <strong>Duration/Overdue</strong> info.  </li>
+</ul>
+</li>
+<li><strong>Sorting Controls (at top of the page):</strong>  </li>
+<li>Two buttons: “Oldest first” and “Newest first.” These toggle how the Processes (and their Steps) are ordered.  </li>
+<li><strong>Loading State:</strong> while data is loading, you see “Loading…”.  </li>
+<li>Use the toggle buttons above the timeline or list to switch between “By Process” and “By Step” modes.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h1 id="doercontributor-workflow">Doer/Contributor Workflow<a class="headerlink" href="#doercontributor-workflow" title="Permanent link">&para;</a></h1>
+<ol>
+<li>
+<p><strong>View Assigned Steps</strong>  </p>
+<ul>
+<li>After login, go to <code>/doer/steps</code> (DoerStepList).  </li>
+<li>You’ll see all active (pending or in-progress) Steps assigned to you. Each card shows Step name, TAT, and any existing status or data points.</li>
+</ul>
+</li>
+<li>
+<p><strong>Search, Filter, Sort, and Group</strong>  </p>
+<ul>
+<li><strong>Search Box</strong>: type part of a Step name to filter the list.  </li>
+<li><strong>Filter Menu</strong> (click the filter icon):  </li>
+<li>All Steps  </li>
+<li>TAT &lt; 10 hrs  </li>
+<li>TAT ≥ 10 hrs  </li>
+<li><strong>Sort Menu</strong> (click the sort icon):  </li>
+<li>No Sort  </li>
+<li>TAT Ascending  </li>
+<li>TAT Descending  </li>
+<li>Sequence Ascending  </li>
+<li>Sequence Descending  </li>
+<li><strong>Group Menu</strong> (click the group icon):  </li>
+<li>None (flat list)  </li>
+<li>Process (group cards under collapsible “Process: [Name]” headers)  </li>
+<li>Data Points (group cards by sequence_id under “Sequence: [ID]” headers)</li>
+</ul>
+</li>
+<li>
+<p><strong>Open a Step</strong>  </p>
+<ul>
+<li>Click on any Step card → you go to <code>/doer/step/&lt;stepId&gt;/submission/&lt;submissionId&gt;</code> (DoerStepDetail).  </li>
+<li>If the Step uses a <strong>Crafty Form</strong>, you’ll see a form transposed view.  </li>
+<li>If the Step uses a <strong>Google Form</strong>, you’ll see the form transposed view.</li>
+</ul>
+</li>
+<li>
+<p><strong>Fill &amp; Submit</strong>  </p>
+<ul>
+<li>Complete all required fields, then click <strong>Submit</strong>.  </li>
+<li>The app stores your answers in <code>form_responses</code> and updates the Step’s status to <code>completed</code>.  </li>
+<li>You are redirected to <code>/doer/submission/&lt;submissionId&gt;</code> (DoerSubmissionDetail).</li>
+</ul>
+</li>
+<li>
+<p><strong>View Submission Details</strong>  </p>
+<ul>
+<li>On <code>/doer/submission/&lt;submissionId&gt;</code>, you see a read-only view of each question and your answers, with timestamps.  </li>
+<li>You cannot edit after submission—this is strictly a detail view.</li>
+</ul>
+</li>
+<li>
+<p><strong>Receive Reminders</strong>  </p>
+<ul>
+<li>If an Admin sends you a reminder, you receive either:  </li>
+<li>An email (if SMTP is configured), or  </li>
+<li>An in-app alert (if the Admin used the <strong>ReminderSection</strong>).</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
